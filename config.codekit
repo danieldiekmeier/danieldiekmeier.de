@@ -58,6 +58,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/static\/sass\/modules\/_blogposts.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/sass\/modules\/_blogposts.sass",
+		"outputAbbreviatedPath": "\/static\/sass\/css\/_blogposts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/static\/sass\/modules\/_breakpoints.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -170,6 +186,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/static\/sass\/modules\/_variables.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/static\/sass\/modules\/_variables.sass",
+		"outputAbbreviatedPath": "\/static\/sass\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/static\/sass\/modules\/_work.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -205,7 +237,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Daniel",
+"lastSavedByUser": "Daniel Diekmeier",
 "manualImportLinks": {
 	},
 "projectAttributes": {

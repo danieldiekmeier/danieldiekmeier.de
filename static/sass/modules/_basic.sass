@@ -17,7 +17,7 @@ html
 
 body
 	background:
-		color: #E3E6E9
+		color: $site-background
 		image: url('../assets/pattern.svg')
 		size: auto
 	font:
@@ -33,7 +33,7 @@ body
 
 h2
 	font:
-		weight: 600
+		weight: $semibold
 		size: 1em
 	margin:
 		bottom: 1rem
@@ -47,6 +47,7 @@ p, ul, ol, blockquote
 
 a
 	text-decoration: none
+	color: $main
 	&:active
 		top: 1px
 
@@ -55,9 +56,13 @@ a
 		left: 32px
 		right: 32px
 	width: 100%
+	+break--small
+		padding:
+			left: 10px
+			right: 10px
 
 .wrapper
-	max-width: 1024px
+	max-width: 1004px
 	width: 100%
 	background:
 		color: #fff
