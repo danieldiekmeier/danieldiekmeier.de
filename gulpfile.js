@@ -10,7 +10,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('minify', function () {
-  return gulp.src('./static/assets/*')
+  return gulp.src('./static/assets/*.jpg')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
