@@ -1,5 +1,25 @@
-var gulp = require('gulp');
+var gulp        = require('gulp');
+var imagemin    = require('gulp-imagemin');
+var pngcrush    = require('imagemin-pngcrush');
+var runSequence = require('run-sequence');
+var sass        = require('gulp-ruby-sass')
 
 gulp.task('default', function() {
-  // place code for your default task here
+  return runSequence('sass',
+    'minify');
+});
+
+gulp.task('minify', function () {
+  return gulp.src('./static/assets/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngcrush()]
+    }))
+    .pipe(gulp.dest('./static/assets/'));
+});
+
+gulp.task('sass', function () {
+  return gulp.src('./static/sass/style.sass')
+    .pipe(sass({style: 'compressed', sourcemap: false}))
 });
