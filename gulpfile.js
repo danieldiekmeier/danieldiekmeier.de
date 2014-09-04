@@ -22,4 +22,5 @@ gulp.task('minify', function () {
 gulp.task('sass', function () {
   return gulp.src('./static/sass/style.sass')
     .pipe(sass({style: 'compressed', sourcemap: false}))
+    .pipe(gulp.dest('./static/css'));
 });
