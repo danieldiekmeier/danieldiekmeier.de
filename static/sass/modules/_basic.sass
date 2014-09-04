@@ -16,21 +16,20 @@ html
 	-webkit-font-smoothing: antialiased
 
 body
-	display: flex
-	min-height: 100vh
-	flex-direction: column
 	background:
 		color: #E3E6E9
 		image: url('../assets/pattern.svg')
 		size: auto
-	padding:
-		top: 40px
-		bottom: 40px
 	font:
 		size: inherit
 		family: 'Source Sans Pro', Helvetica, Arial
 	line-height: 1.5em
 	-webkit-font-smoothing: subpixel-antialiased
+	+break--large
+		padding:
+			top: 40px
+			bottom: 40px
+
 
 h2
 	font:
