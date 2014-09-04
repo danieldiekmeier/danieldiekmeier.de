@@ -1,0 +1,101 @@
+*
+	position: relative
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	-webkit-appearance: none
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+
+ul, ol
+	list-style-type: none
+
+html
+	min-height: 100%
+	font:
+		size: 18px
+	-webkit-font-smoothing: antialiased
+
+body
+	display: flex
+	min-height: 100vh
+	flex-direction: column
+	background:
+		color: #E3E6E9
+		image: url('../assets/pattern.svg')
+		size: auto
+	padding:
+		top: 40px
+		bottom: 40px
+	font:
+		size: inherit
+		family: 'Source Sans Pro', Helvetica, Arial
+	line-height: 1.5em
+	-webkit-font-smoothing: subpixel-antialiased
+
+h2
+	font:
+		weight: 600
+		size: 1em
+	margin:
+		bottom: 1rem
+
+p, ul, ol, blockquote
+	font-size: 1em
+	line-height: 1.5em
+	margin-bottom: 0.5em
+	&:last-child
+		margin-bottom: 0
+
+a
+	text-decoration: none
+	&:active
+		top: 1px
+
+.limiter
+	padding:
+		left: 32px
+		right: 32px
+	width: 100%
+
+.wrapper
+	max-width: 1024px
+	width: 100%
+	background:
+		color: #fff
+	margin:
+		left: auto
+		right: auto
+	box-shadow: 0 3px 3px 0px rgba(#000, 0.07)
+
+.link
+	&--no-highlight
+		color: inherit !important
+		text-decoration: inherit
+	&--no-top
+		&:active
+			top: 0
+
+.clearfix
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.align
+	&--left
+		float: left
+	&--right
+		float: right
+
+.hidden
+	display: none
+	&--small
+		display: block
+
+.margin-top
+	margin-top: 2rem
+.margin-bottom
+	margin-bottom: 1rem
+
+.main
+	flex: 1
