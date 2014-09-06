@@ -14,6 +14,7 @@
 		right: 10px
 		bottom: 20px
 	overflow: hidden
+	color: #999
 	+break--small
 		width: 100%
 		margin:
@@ -28,7 +29,7 @@
 	&__image
 		display: block
 		width: 100%
-		border: 1px solid rgba(#000, 0.1)
+		border:
 			top:
 				left-radius: $radius
 				right-radius: $radius
@@ -48,3 +49,5 @@
 			weight: $semibold
 			size: 1rem
 		line-height: 1.5em
+		&:after
+			content: " →"
