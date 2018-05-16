@@ -1,26 +1,24 @@
 {
   "name": "danieldiekmeier.de",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-sass": "^2.3.2",
-    "imagemin-pngcrush": "^5.0.0"
-  },
+  "main": "src/index.js",
   "scripts": {
+    "build": "flachpack -o dist src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://danieldiekmeier@github.com/danieldiekmeier/danieldiekmeier.de.git"
+    "url": "git+https://danieldiekmeier@github.com/danieldiekmeier/danieldiekmeier.de.git"
   },
-  "author": "Daniel Diekmeier",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danieldiekmeier/danieldiekmeier.de/issues"
   },
-  "homepage": "https://github.com/danieldiekmeier/danieldiekmeier.de"
+  "homepage": "https://github.com/danieldiekmeier/danieldiekmeier.de#readme",
+  "dependencies": {
+    "flachpack": "^0.1.0"
+  }
 }
