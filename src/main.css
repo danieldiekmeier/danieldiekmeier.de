@@ -9,6 +9,16 @@ body {
   line-height: 1.4;
 }
 
+html:active [data-role="description"] {
+  position: relative;
+  filter: blur(8px);
+}
+
+[data-role="description"] {
+  transition-property: filter;
+  transition-duration: 0.2s;
+}
+
 nav {
   margin-bottom: 1em;
 }
