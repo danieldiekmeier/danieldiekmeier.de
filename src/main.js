@@ -1,37 +1,14 @@
-/**
- * Shuffles array in place.
- * @param {Array} a items An array containing the items.
- */
-function shuffle (a) {
-  var j, x, i
-  for (i = a.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1))
-    x = a[i]
-    a[i] = a[j]
-    a[j] = x
-  }
-  return a
-}
+document.querySelectorAll('a').forEach(element => {
+  const html = element.textContent
+    .split('')
+    .map((letterOrSpace, index, letters) => {
+      const delay = index * 100 - letters.length * 100
 
-var descriptions = shuffle([
-  'Mensch',
-  'Softwareentwickler',
-  'Front End Entwickler',
-  'toller Hecht',
-  'Tausendsassa',
-  'Weltbürger',
-  'HTML Ninja'
-])
+      const letter = letterOrSpace === ' ' ? '&nbsp;' : letterOrSpace
 
-var index = 0
+      return `<span style="animation-delay: ${delay}ms">${letter}</span>`
+    })
+    .join('')
 
-document.documentElement.addEventListener('click', function (event) {
-  const isLink = !!event.target.closest('a')
-
-  if (isLink) return
-
-  index = (index + 1) % descriptions.length
-
-  var description = descriptions[index]
-  document.querySelector('[data-role="description"]').innerText = description
+  element.innerHTML = html
 })
