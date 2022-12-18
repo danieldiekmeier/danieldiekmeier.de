@@ -136,6 +136,26 @@ nav {
   }
 }
 
+.New {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4em;
+  height: 4em;
+
+  border-radius: 50%;
+  background-color: #ffd31d;
+
+  color: #015668;
+  font-size: 0.6 * 2em;
+
+  transform: translate(-130%, -50%) rotate(-7deg);
+  user-select: none;
+}
+
 h1,
 p {
   margin-bottom: 1rem;
