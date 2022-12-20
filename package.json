@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/danieldiekmeier/danieldiekmeier.de#readme",
   "dependencies": {
-    "flachpack": "^0.2.0"
+    "flachpack": "^0.2.1"
   }
 }
