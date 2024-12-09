@@ -23,11 +23,6 @@ body {
   min-height: 100vh;
   padding: calc(3vw + 1em);
 
-  @media (max-width: 600px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   font-family: 'Fredoka One', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -36,6 +31,11 @@ body {
   color: #42240c;
   background-color: rgba(250, 231, 203, 0.6);
   line-height: 1.5;
+
+  @media (max-width: 600px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   ::selection {
     background: rgba(#ffd31d, 0.5);
@@ -121,20 +121,23 @@ nav {
     top: -25px;
     left: calc(5em + (217px / 2));
 
-    @media (max-width: 600px) {
-      left: 50%;
-    }
-
     border: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 25px solid white;
 
     transform: translateX(-50%);
+
+    @media (max-width: 600px) {
+      left: 50%;
+    }
   }
 }
 
 .Text {
+  width: 400px;
+  max-width: calc(100% - 4rem);
+
   p {
     font-size: 1em;
   }
